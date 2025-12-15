@@ -217,8 +217,6 @@ header {
 .mw-configuration {
     background: var(--bg-panel);
     padding: 1.2rem;
-
-    border-left: 1px solid var(--border-soft);
     font-size: 0.85rem;
 }
 .mw-configuration h2 {
@@ -267,7 +265,7 @@ body::after {
 /* Scrollbar */
 html {
     scrollbar-width: thin;
-    scrollbar-color: #3cff7a var(--bg-panel);
+    scrollbar-color: rgba(60, 255, 122, 0.2) var(--bg-panel);
 }
 
 /* WebKit */
