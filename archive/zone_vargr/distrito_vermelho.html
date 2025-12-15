@@ -4,51 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEMPLATE</title>
-
     <link rel="stylesheet" href="../../assets/styles/reset.css">
-    <link rel="stylesheet" href="../../assets/styles/template.css">
+    <link rel="stylesheet" href="../../assets/styles/templateCss/templateScifi.css">
+    
+    <!-- <script src="./assets/js/template.js" defer></script> -->
 </head>
 <body>
     <header>
         <div class="hd-logo-zone">
-            <img src="../../assets/img/icons/ArgonautaHeader.png" alt="Argonauta Logo">
+            <img src="../../assets/img/icons/ArgonautaHeaderWhite.png" alt="Argonauta Logo">
         </div>
         <div class="hd-search-zone">
             <form action="#">
-                <input type="text" name="serach" id="serach" disabled>
+                <input type="text" name="serach" id="serach" value="Pesquise na Argopédia" disabled>
             </form>
+            <button type="submit" disabled>Procurar</button>
         </div>
     </header>
-    <h1>Distrito Vermelho</h1>
+    
     <main><div class="mw-page-container">
         <aside class="mw-content-bar">
             <h2>Conteúdos</h2>
+            <div class="mw-divisor"></div>
             <ul>
-                <li><a href="#id"><span>Início</span></a></li>
-                <li><a href="#id"><span>Example 1</span></a></li>
+                <li><a href="#introduction"><span>Início</span></a></li>
+                <li><a href="#mundo_suburbano"><span>Mundo Suburbano</span></a></li>
                 <li><a href="#id"><span>Example 2</span></a></li>
             </ul>
         </aside>
         <article class="mw-content">
-            <p>O distrito foi estabelecido há menos de meio século, com o retorno das campanhas de extração em Mavorte. O estabelecimento de empresas mineradoras de renome, como a Vila Vermelha e a Companhia Társis de Extração, elevou a fama da cidade exponencialmente, atraindo investidores e pessoas esperançosas por emprego.</p>
+            <h1>Distrito Vermelho</h1>
+            <div class="mw-sections">
+                <section class="mw-article-layout" id="introduction">
+                <p>O Distrito Vermelho de Mavorte é uma região bastante populada, marcada por vários pontos suburbanos que abrigam a maior parte da força trabalhadora da cidade. Esses núcleos se conectam diretamente ao sistema de transporte da Ronaférrea.</p>
 
-<p>A rápida expansão resumiu o planejamento urbano a construções rápidas, acumuladas, próximas e em ruas estreitas. Mercados, subúrbios e comunidades cresceram à sombra das empresas, e apesar do ritmo de pressa, há um contentamento geral pela oferta de trabalho.</p>
+                <p>O distrito foi estabelecido há menos de meio século, com o retorno das campanhas de extração em Mavorte. O estabelecimento de empresas mineradoras de renome, como a Vila Vermelha e a Companhia Társis de Extração, elevou a fama da cidade exponencialmente, atraindo investidores e pessoas esperançosas por emprego.</p>
 
-<p>Entre os subúrbios e complexos industriais, formam-se regiões subterrâneas e áreas obscurecidas, onde esquemas ilegais e crimes se desenrolam. Aos que se aventuram pela região, contam com a forte demanda policial do distrito.
-  
-<p>Com esse clima e a atenção quase exclusiva nas indústrias, todos comentam do Distrito Vermelho. Ainda sim, mas poucos realmente conhecem as maquinações silenciosas, os acordos velados e as disputas que ocorrem nos escritórios e nos subúrbios.</p>
+                <p>A rápida expansão resumiu o planejamento urbano a construções rápidas, acumuladas, próximas e em ruas estreitas. Mercados, subúrbios e comunidades cresceram à sombra das empresas, e apesar do ritmo de pressa, há um contentamento geral pela oferta de trabalho.</p>
+
+                <p>Entre os subúrbios e complexos industriais, formam-se regiões subterrâneas e áreas obscurecidas, onde esquemas ilegais e crimes se desenrolam. Aos que se aventuram pela região, contam com a forte demanda policial do distrito.
+                
+                <p>Com esse clima e a atenção quase exclusiva nas indústrias, todos comentam do Distrito Vermelho. Ainda sim, poucos realmente conhecem as maquinações silenciosas, os acordos velados e as disputas que ocorrem nos escritórios e nos subúrbios.</p>
+                </section>
+
+                <section class="mw-article-layout" id="mundo_suburbano">
+                <h2>O Mundo Suburbano</h2>
+                <p>O mundo suburbano do Distrito Vermelho compreende os conglomerados habitacionais erguidos em torno das indústrias mineradoras, dos campos e dos eixos ferroviários. É aqui que vive a maior parte da população trabalhadora em assentamentos densos. Erguidas tanto verticalmente e horizontalmente, as casas modulares dominam o lugar, formando prédios informais com ruas estreitas, passagens elevadas e passarelas que criam múltiplas conexões no ambiente.</p>
+                <figure class="mw-article-media">
+                    <img src="../../assets/img/vargr/c1.png" alt="Casas Vargr">
+                    <figcaption>O Distrito Vermelho</figcaption>
+                </figure>
+                <p>Apesar da impressão de instabilidade, essas estruturas se mantêm funcionais graças à própria manutenção dos moradores, que adaptam, reforçam e expandem as estruturas.</p>
+
+                <h4>--- Nas Sombras do Suburbano ---</h4>
+                <p>Com tamanhas construções, grupos paralelos se formaram nas sombras do subúrbio, esculpidas em túneis e construções antigas. Esquemas ilegais em vielas, casas de prazer e apostas, crimes, cultos proibidos, fazendas de drogas e todas muitas outras formas de depravações.</p>
+
+                <p>Muitos crimes que acontecem nos suburbios partem das zonas mais obscurecidas, e mesmo com a presença ostensiva nas áreas principais pela polícia, a fama do distrito vem decaindo com os anos.</p>
+
+                <h4>--- Lugares de Interesse ---</h4>
+                <ul>
+                <li><strong>Mercado da Linha Baixa:</strong> feira permanente imediata as empresas. Se estende por metros e o fluxo de gente é constante. Dá para comprar todo tipo de bugiganga e suprimentos.</li>
+                <li><strong>Complexos de Festa:</strong> são vários, espalhados nas regiões mais baixas do subúrbio. Todo tipo de depravado se encontra por aqui, de apostadores ilegais a cultos privados e drogas sintéticas.</li>
+                <li><strong>Antigo Bloco Luzimata-09:</strong> complexo habitacional abandonado, tomado pelas sombras de construções acima deles. Há muitos esquemas nessa região.</li>
+                </ul>
+                </section>
+            </div>
         </article>
         <aside class="mw-configuration">
             <h2>Aparência</h2>
+            <div class="mw-divisor"></div>
             <div class="cf-option-group">
-                <span>Texto</span>
+                <p>Texto</p>
                 <form>
                     <div class="cdx-radio">
                         <input type="radio" name="skin-font" id="skin-font-small">
                         <label for="skin-font-small">Pequeno</label>
                     </div>
                     <div class="cdx-radio">
-                        <input type="radio" name="skin-font" id="skin-font-medium">
+                        <input type="radio" name="skin-font" id="skin-font-medium" checked>
                         <label for="skin-font-small">Padrão</label>
                     </div>
                     <div class="cdx-radio">
