@@ -246,11 +246,10 @@ header {
 }
 
 /* ========================
-    EFEITO SCANLINE (opcional)
+    EFEITOS (opcional)
 ========================
 */
-
-
+/* Scanline */
 body::after {
     content: "";
     position: fixed;
@@ -264,4 +263,21 @@ body::after {
     background-size: 100% 3px;
     opacity: 0.9;
 }
-   
+
+/* Scrollbar */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #3cff7a var(--bg-panel);
+}
+
+/* WebKit */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #eaecf0;
+}
+::-webkit-scrollbar-thumb {
+    background: #3366cc;
+    border-radius: 6px;
+}
