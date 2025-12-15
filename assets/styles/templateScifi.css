@@ -1,0 +1,267 @@
+:root {
+    --bg-main: #0b0f14;
+    --bg-panel: #10161d;
+    --bg-panel-alt: #0e1319;
+
+    --border-soft: rgba(255,255,255,0.08);
+    --border-strong: rgba(0,255,255,0.25);
+
+    --text-main: #d7e0ea;
+    --text-muted: #8fa3b8;
+    --text-accent: #4fd1c5;
+
+    --link: #6cb6ff;
+    --danger: #ff6b6b;
+
+    --font-ui: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #0b0f14, #070a0e);
+    color: var(--text-main);
+    font-family: var(--font-ui);
+    font-size: 15px;
+}
+
+/* ========================
+    HEADER
+========================
+*/
+header {
+    /* display: grid;
+    grid-template-columns: auto 1fr auto; */
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+
+    padding: 0.6rem 2.5rem;
+    background: var(--bg-panel);
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.hd-logo-zone {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; 
+}
+
+.hd-logo-zone img {
+    height: 50px;
+}
+
+.hd-search-zone {
+    display: flex;
+    justify-content: center;
+}
+
+.hd-search-zone input {
+    width: 520px;
+    padding: 0.45rem 0.6rem;
+
+    background: var(--bg-panel-alt);
+    color: var(--text-main);
+
+    border: 1px solid var(--border-strong);
+    outline: none;
+
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+}
+
+.hd-search-zone input::placeholder {
+    color: var(--text-muted);
+}
+
+.hd-search-zone button {
+    background: var(--bg-panel);
+    /* color: var(--text-main); */
+    color: var(--text-muted);
+    border: 1px solid var(--border-strong);
+    border-left: none;
+    padding: 0 0.8rem;
+    /* cursor: pointer; */
+    
+}
+
+/* ========================
+    CONTAINER PRINCIPAL
+========================
+*/
+.mw-page-container {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr) 220px;
+    gap: 2rem;
+    padding: 2.5rem 3rem;
+    min-height: 100vh;
+}
+
+.mw-divisor {
+    border-top: 1px solid var(--border-soft);
+    padding-top: 1rem;
+}
+
+/*
+========================
+    SIDEBAR ESQUERDA (mw-content-bar)
+========================
+*/
+.mw-content-bar {
+    background-color: var(--bg-panel);
+    padding: 1.2rem;
+    padding-top: 1rem;
+}
+
+.mw-content-bar h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.mw-content-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mw-content-bar li {
+    margin-bottom: 0.5rem;
+}
+
+.mw-content-bar a {
+    color: var(--link);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.mw-content-bar a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CONTEÚDO PRINCIPAL (mw-content)
+========================= 
+*/
+
+/* Uma possibilidade... 
+.mw-content {
+    background: var(--bg-panel);
+    padding: 2.5rem 3rem;
+
+    border: 1px solid var(--border-soft);
+    box-shadow: inset 0 0 0 1px rgba(0,255,255,0.05);
+} */
+
+.mw-content h1 { 
+    font-size: 2.2rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.mw-sections section h3 {
+    margin: 1.2rem 0 0.6rem;
+    padding-bottom: 0.2rem;
+    font-size: 1.5rem;
+    color: var(--text-accent);
+}
+
+.mw-sections section p {
+    line-height: 1.4;
+    color: var(--text-main);
+}
+
+.mw-sections section ul {
+    margin: 1rem 0;
+}
+
+/* =========================
+   IMAGEM/INFOGRÁFICO LATERAL
+========================= 
+*/
+.mw-article-media {
+    float: right;
+    margin: 0 0 1em 1.5em; 
+    max-width: 300px; 
+
+    background-color: var(--bg-panel-alt);
+    border: 1px solid var(--border-soft);
+    padding: 5px;
+}
+
+.mw-article-media img {
+    max-height: 200px;
+    height: auto;
+    display: block;
+}
+
+/* .mw-article-media figcaption {
+    padding: 0.5em 0.2em;
+    font-size: 0.85em;
+    text-align: left;
+    color: var(--text-muted); 
+} */
+
+
+/* ========================
+    SIDEBAR DIREITA (mw-configuration)
+========================
+*/
+.mw-configuration {
+    background: var(--bg-panel);
+    padding: 1.2rem;
+
+    border-left: 1px solid var(--border-soft);
+    font-size: 0.85rem;
+}
+.mw-configuration h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+/* .cf-option-group {
+    border-top: 1px solid var(--border-soft);
+    padding-top: 1rem;
+} */
+.cf-option-group>p {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.cdx-radio {
+    margin-bottom: 0.4rem;
+}
+
+.cdx-radio label {
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+/* ========================
+    EFEITO SCANLINE (opcional)
+========================
+*/
+
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image: linear-gradient(
+        rgba(10, 184, 65, 0.1) 1px,
+        transparent 1px
+    );
+    background-size: 100% 3px;
+    opacity: 0.9;
+}
+   
