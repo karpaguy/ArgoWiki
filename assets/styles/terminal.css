@@ -1,0 +1,113 @@
+:root {
+  --retro-bg-dark: #0A1D0A;      /* fundo verde quase preto */
+  --retro-bg: #0A5114;           /* verde escuro de fundo */
+  --retro-green: #0AAC5D;        /* verde fosforescente do texto */
+  --retro-blue-dark: #0D166C;    /* azul escuro (ícone / contraste) */
+  --retro-blue-soft: #9DAEE3;    /* azul claro suave */
+
+  --retro-text-color: #22cc66;
+  --retro-yellow: #E6E26F;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      ellipse at center,
+      #234223 0%,
+      #142e14 50%,
+      #0a180a 80%,
+      #040904 100%
+    );
+
+    font-size: 18px;
+}
+
+.mw-top-line {
+    background-color: var(--retro-bg);
+
+    /* background: #var; */
+
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 2px 10px;
+    margin-bottom: 0.3rem;
+}
+.mw-container {
+    background-color: var(--retro-bg-dark);
+
+    width: 680px;
+    border-radius: 6px;
+    border: 1px solid rgba(11, 153, 70, 0.25);
+
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.8);
+    
+    font-family: "Courier New", monospace;
+    color: var(--retro-text-color);
+    text-shadow: 0 0 6px rgba(34, 204, 102, 0.8);
+}
+.mw-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 20px;
+}
+
+.mw-content p:first-child {
+  opacity: 1;
+}
+.mw-content p {
+  opacity: 0.9;
+}
+
+/* Scanline */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image: linear-gradient(
+        rgba(10, 184, 65, 0.1) 1px,
+        transparent 1px
+    );
+    background-size: 100% 3px;
+    opacity: 0.9;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.04) 0%,
+        rgba(255,255,255,0.01) 40%,
+        rgba(0,0,0,0.15) 60%,
+        rgba(0,0,0,0.3) 100%
+    );
+
+    mix-blend-mode: overlay;
+}
+
+form input {
+  /* background-color: var(--retro-bg); */
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  padding: 2px 4px;
+  color: var(--retro-yellow);
+  text-shadow: 0 0 6px rgba(201, 204, 34, 0.1);
+}
+input:focus, textarea:focus, select:focus{ outline: none; }
